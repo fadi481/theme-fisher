@@ -1,0 +1,449 @@
+$primary-color:#000000;
+$seccondry-color:#928f8f;
+$theme-color:#535353;
+$yellow-color:#ffb600;
+$white-color:#ffffff;
+$grey-dark:#212529;
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+.main-header-page{
+      display: flex;
+      background-color: $seccondry-color;
+      padding: 1rem 0;
+
+    h6{
+        font-weight: 400;
+        padding: 1rem 0;
+        display: inline;
+    }
+    i{
+        color: $theme-color;
+        font-size: 1rem;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    i:hover{
+        color:$primary-color;
+    }
+    .icons{
+        display: inline;
+        margin-left:45rem;
+    }
+}
+.main-header-2{
+  display: flex;
+  margin: .50rem 0;
+    img{
+        width: 200px;
+        
+    }
+    h6{
+       color: $seccondry-color;
+       display: block;
+    }
+    a{
+        text-decoration: none;
+        color:$primary-color ;
+        font-weight:600 ;
+        display: block;
+    }
+    .cntct-btn-1{
+        margin-left: 10rem;
+    }
+    .cntct-btn{
+        
+        padding: 1rem;
+        align-items: center;
+        display: inline-block;
+        border-right:  1px solid $seccondry-color;
+    }
+    button{
+         border: none;
+         background-color: $yellow-color;
+         font-family: "Open Sans", sans-serif;
+         color: $white-color;
+         font-weight:600;
+         padding: .5rem 1.5rem;
+         border-radius: 5px;
+         margin-left: 1rem;
+         transition: background-color  1s;
+    }
+    button:hover{
+        background-color: $primary-color;
+        color: $yellow-color;
+    }
+}
+.main-navbar-wrapp{
+   background-color: $grey-dark;
+   padding: 1rem 0;
+   width: 100%;
+   z-index: 10;
+   
+   .main-navbar-wrapp.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+  }
+  
+   .navbar-toggler-icon{
+     background-color: $yellow-color;
+     padding: 1rem;
+   }
+
+   .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+   .nav-link{
+    color: $white-color;
+    font-weight: 500;
+   }
+   .nav-link:hover{
+    color: $yellow-color;
+   }
+   .nav-search{
+    color: $seccondry-color;
+    padding-left: 25rem;
+    align-items: center;
+   }
+}
+.main-image-wrapp{
+     font-family: "Open Sans", sans-serif;
+     position: relative;
+    img{
+        width: 100%;
+    }
+    .inner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+    h1{
+        font-weight: 900;
+
+    }
+    a{
+        font-weight: 600;
+        color: $white-color;
+        font-size: .75rem;
+        text-decoration: none;
+        transition: color .5s;
+    }
+    a:hover{
+
+        color: $yellow-color;
+
+    }
+}
+.main-seccond-inner{
+    margin: 4rem 0;
+    .card-img{
+        width: 100px;
+        height: 70px;
+    }
+    h6{
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border-left: 4px solid $yellow-color;
+        padding-left: 1rem;
+        text-transform: uppercase;
+    }
+    .col-inner{
+        padding: 1rem 0;
+        cursor: pointer;
+        display: flex;
+        gap: 1rem;
+        border-bottom: 1px solid $seccondry-color;
+    }
+    .anker{
+        text-decoration: none;
+        color: $primary-color;
+        transition: color .5s;
+    }
+    .anker:hover{
+         color: $yellow-color;
+    }
+    .anker-2{
+        color: $primary-color;
+        display: block;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 1rem 0;
+        border-bottom: 1px solid $seccondry-color;
+        transition: color .5s;
+    }
+    .anker-2:hover{
+        color: $yellow-color;
+    }
+    .anker-3{
+        text-decoration: none;
+        padding:10px;
+        margin-bottom: .25rem;
+        text-decoration: none;
+        color: $seccondry-color;
+        text-transform: capitalize;
+        background-color: transparent;
+         border: none;
+         border: 1px solid $seccondry-color;
+         transition: color .5s;
+    }
+    .anker-3:hover{
+        color: $yellow-color;
+    }
+    img{
+        width: 100%;
+    }
+    .img-info{
+        display: flex;
+        gap: 15px;
+        align-items: baseline;
+        margin-top: 1rem;
+    }
+    i{
+        color: $seccondry-color;
+    }
+    a{
+        
+        text-decoration: none;
+        color: $seccondry-color;
+        transition: color .5s;
+    }
+    a:hover{
+        color: $yellow-color;
+    }
+    .first-col{
+        margin-bottom: 1rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid $seccondry-color;
+    }
+    .date{
+        color:$seccondry-color;
+        display: inline;
+    }
+    h2{
+        font-weight: 700;
+        cursor: pointer;
+        transition: color 1s;
+    }
+    .seccond-img{
+        position: relative;
+    }
+    .inner-content{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: $white-color;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .last-btn{
+        border: 1px solid $seccondry-color;
+        padding: .5rem 1rem;
+        margin-top: 2rem;
+        transition: background-color color 1s;
+        font-weight: 700;
+    }
+    .last-btn:hover{
+        background-color: $yellow-color;
+        color: $white-color;
+        border: none;
+    }
+    .last-btns{
+        margin-top: 2rem;
+    }
+
+    h2:hover{
+        color: $yellow-color;
+    }
+    .btn-read{
+        background-color: $yellow-color;
+        padding: .5rem .85rem;
+        font-weight: 700;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: $white-color;
+        transition: background-color 1s;
+    }
+    .btn-read:hover{
+       background-color: $primary-color;
+    }
+}
+
+
+.main-footer-para{
+    background-color: $primary-color;
+    padding: 3rem 0;
+    font-family: "Open Sans", sans-serif;
+    color: $seccondry-color;
+  img{
+      max-width: 200px;
+      max-height: 250px;
+      width: auto;
+      height: auto;
+      object-fit: cover;
+       padding: .90rem 1.5rem;
+      
+  }
+  h4{
+      color: $white-color;
+      border-left: 5px solid $yellow-color;
+      padding-left: 10px;
+      font-weight: 700;
+      border-radius: 2px;
+      font-size: 1rem;
+      text-transform: uppercase;
+  }
+  p{
+      padding: 1.5rem 0;
+  }
+ .social-icons{
+  display: flex;
+  gap: 50px;
+ } 
+ a{
+  display: block;
+  text-decoration: none;
+  color: $seccondry-color;
+  padding: .5rem 0;
+  border-bottom: 1px solid $seccondry-color;
+  opacity: .5;
+  transition: color 1s;
+ }
+ a:hover{
+  color: $yellow-color;
+ }
+} 
+.mainn-last-para{
+  background-color: $yellow-color;
+   padding: 2rem 0;
+  .last-inner{
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+  }
+  a{
+      text-decoration: none;
+      color: $primary-color;
+      padding:0 .5rem ;
+     transition: color 1s;
+  }
+  a:hover{
+     color: $white-color;
+  }
+  .last-para{
+      display: inline;
+  }
+  .last-para-2{
+      display: inline;
+  }
+}
+
+
+
+
+
+@media (max-width:767px) {
+   
+    .main-header-2{
+        .cntct-btn-1{
+            margin-left: 0;
+        
+        }
+        img{
+            height: 35px;
+            width: auto;
+            display: block;
+            margin-left: 5rem;
+        }
+        .cntct-btn{
+            border-right: none;
+        }
+    }
+    .main-header-page{
+        .icons{
+            margin-left:4rem;
+            display: block;
+          }    
+        .main-header-inner{
+            margin-left: 3rem;
+        }
+    }
+    .main-img-wrapp{
+
+        h1{
+          font-size: 1.25rem;
+          
+            
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+         font-size: .60rem;
+         
+        }
+        .third-heading{
+            font-size: 1rem;
+        }
+        .carousel-control-prev{
+            display: none;
+        }
+        .carousel-control-next{
+            display: none;
+        }
+        .third-about{
+            
+            font-size: 1.5rem;
+        }
+        .btn-onee{
+            margin-left:0;
+        }
+        strong{
+            font-size: .75rem;
+        }
+        .quote{
+            text-align: center;
+            position: absolute;
+            bottom:-15%;
+        }
+        .about-info-3{
+            position: absolute;
+            right: 2%;
+            width: 100%;
+        }
+
+    }
+}
+
